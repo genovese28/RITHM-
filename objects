@@ -1,0 +1,59 @@
+var obj = {
+    firstName: 'Michelle',
+    lastName: 'Carey',
+    occupation: 'student'
+};
+obj.firstName;
+obj.lastName;
+obj.occupation;
+obj['firstName'];
+obj['lastName'];
+obj['occupation'];
+obj.hobby = 'biking';
+delete obj.occupation;
+//Always use dot except when its a variable or expression
+
+var namesAndHobbies = {
+    elie: "JavaScript",
+    matt: "jogging",
+    janey: "table building",
+    tim: "sailing"
+};
+for (var key in namesAndHobbies) {
+    console.log(namesAndHobbies[key] + ' => ' + key);
+}
+namesAndHobbies.Michelle = 'biking';
+
+if ("Michelle" in namesAndHobbies) {
+    console.log( 'Michelle' + ': ' + namesAndHobbies.Michelle);
+
+}
+var programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+};
+programming.languages.push("Go");
+programming;
+programming.difficulty = 7;
+delete programming.jokes;
+programming.isFun = true;
+programming;
+for(var i = 0; i < programming.languages.length; i++) {
+     console.log(programming.languages[i]);
+     }
+
+for(var key in programming) {
+    console.log(key);
+    }
+
+ for(var key in programming) {
+     console.log(programming[key]);
+ }
+
+
+
+
+
