@@ -1,0 +1,30 @@
+2 === 2;
+10 % 3;
+10 % 3 ===1;
+true && false;
+false || true;
+true || false;
+
+console.log("Keep it up!");
+"if(islearning) is the same thing as if(islearning === true).  It's just shortened"
+var firstVariable;
+var secondVariable = "";
+var thirdVariable = 1;
+var secretMessage = "Shh!";
+
+if(firstVariable) {
+    console.log("first");
+} else if(firstVariable || secondVariable) {
+    console.log("second");
+} else if(firstVariable || thirdVariable) {
+    console.log("third");
+} else {
+    console.log("fourth");
+}
+
+//third because it has || operator and that returns true if either are true.   
+
+firstVariable= undefined(false)
+"firstVariable is falsy because it is undefined.  There for its false."
+"secondVariable is a falsy value and returns a false value."
+"thirdvariable is a truthy value because it's value is 1 which is true."
