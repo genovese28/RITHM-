@@ -1,0 +1,62 @@
+var favoriteFoods = ['seafood', 'indian', 'mexican'];
+favoriteFoods[1];
+favoriteFoods[2] = 'chinese'
+favoriteFoods.shift();
+formerFavortiteFood = 'seafood';
+favoriteFoods.push('thai');
+favoriteFoods.unshift('cheese');
+//undefined when you pop an empty array.
+var array = [2, 3, 4, 5];
+array.splice(1, 1);
+var ele = ['alpha', 'gamma', 'delta'];
+ele.splice(1, 0, 'beta')
+
+//Part 1
+
+var arr = [];
+arr.push('Michelle');
+arr.push('carey');
+arr.unshift('blue');
+arr.shift();
+var arr2 = [];
+arr2.push(10);
+arr2.push('JavaScript');
+arr2.indexOf(42);
+// -1
+var combinedArr = arr.concat(arr2);
+
+//Part 2
+
+var arr = ['JavaScript', "Python", "Ruby", "Java"];
+arr.slice(1,3);
+arr.concat('Haskell', 'Clojure');
+arr.join(' ');
+//Passing by value is when you assign a variable. Passing by reference is just that, referring to the variable that is already assighned.
+var people = ["Greg", "Mary", "Devon", "James"];
+
+for (var i = 0; i < people.length; i++) {
+    console.log(people[i]);
+}
+people.shift();
+people.pop();
+people.unshift("Matt");
+people.push("Michelle");
+for (var i = 0; i < people.length; i++) {
+    console.log(people[i]);
+    if ( people[i] === "Mary") {
+        break;
+    }
+}
+people.slice(0,2);
+people.splice(2);
+people.indexOf('Mary');
+people.indexOf('Foo');
+people.splice(0,1 , 'Greg');
+people.splice(2, 2, 'Devon', 'James');
+people.splice(2, 1, 'Elizabeth', 'Artie');
+
+
+
+
+
+
