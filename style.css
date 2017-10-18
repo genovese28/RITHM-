@@ -1,0 +1,19 @@
+body {
+	background-color: #33ccff;
+}
+
+p {
+  font-family: Sans-serif;
+}
+
+ul {
+	text-align: center;
+  list-style: none;
+  font-family: Sans-serif;
+    
+}
+
+li::first-letter {
+   font-size: 25px;
+   
+ }
