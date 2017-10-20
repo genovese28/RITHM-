@@ -1,0 +1,148 @@
+function myName(){
+    var name = 'michelle';
+    console.log(name);
+}
+myName();
+
+var favoriteFoods = ["pizza", "ice cream"];
+
+function randomFood() {
+    var randomIndex = Math.floor(Math.random() * favoriteFoods.length);
+    console.log(favoriteFoods[randomIndex]);
+}
+randomFood();
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayOddNumbers() {
+    for(var i = 0; i < numbers.length; i++){
+        if( numbers[i] % 2 !== 0) {
+            console.log(numbers[i]);
+        }
+    }
+}
+displayOddNumbers();
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+function displayEvenNumbers() {
+    for(var i = 0; i < numbers.length; i++) {
+        if(numbers[i] % 2 == 0) {
+            console.log(numbers[i]);
+        }
+    }
+}
+displayEvenNumbers();
+
+function returnFirstOddNumber() {
+    for(var i =0; i < numbers.length; i++) {
+        if(numbers[i] % 2 !== 0) {
+            return numbers[i];
+        }
+    }
+}
+returnFirstOddNumber();
+
+function returnFirstEvenNumber() {
+    for(var i = 0; i < numbers.length; i++) {
+        if(numbers[i] % 2 === 0) {
+            return numbers[i]
+        }
+    }
+}
+returnFirstEvenNumber();
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+function returnFirstHalf() {
+    return numbers.slice(0, numbers.length/2);
+    }
+returnFirstHalf();
+
+function returnSecondHalf() {
+    return numbers.slice(numbers.length/2);
+}
+returnSecondHalf();
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+function divide(num1, num2) {
+    return num1 / num2
+}
+function sayHello(string) {
+    if (string === 'Michelle') {
+        return 'Hello Boss';
+    } else {
+        return 'Hello' + string;
+    }
+}
+    function average(arr) {
+        var total = 0;
+
+        for (var i = 0; i < arr.length; i++) {
+              total += arr[i];
+        }
+        return total / arr.length;
+    }
+    function createStudent(string1, string2) {
+        var obj = {
+            firstName: string1,
+            lastName: string2
+        };
+        return obj;
+    }
+
+ var tim = createStudent("Tim", "Garcia");
+var matt = createStudent("Matt", "Lane");
+var elie = createStudent("Elie", "Schoppik");
+
+var students = [tim, matt, elie];
+
+function findStudentByFirstName(string) {
+    for (var i = 0; i < students.length; i++) {
+        if (string.toLowerCase() === students[i].firstName.toLowerCase()) {
+            return true;
+        }
+    }
+    return false;
+}
+function extractEveryThird(arr) {
+    var third = [];
+    for (var i = 2; i < arr.length; i += 3){
+        third.push(arr[i]);
+    }
+    return third;
+}
+function countEvensAndOdds(arr) {
+    var obj = {
+        oddCount: 0,
+        evenCount: 0
+    };
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            obj.oddCount++ ;
+        } else {
+            obj.evenCount++;
+        }
+    }
+    return obj;
+}
+
+function onlyCapitalLetters(str) {
+    var caps = '';
+
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] === str.toUpperCase()) {
+            caps += str[i];
+        }
+    }
+    return caps;
+}
+//onlyCapitalLetters("Amazing") // "A"
+onlyCapitalLetters("nothing") // ""
+//onlyCapitalLetters("EVERYTHING") // "EVERYTHING"
