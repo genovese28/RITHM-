@@ -1,0 +1,62 @@
+/*1. throwing an error stops the code from executing
+2.  try/catch statements has a finally block(at the end)
+it will execute regarless of an error being thrown.
+3. Type error happens when you make incorrent use of cetain types.
+A reference error occurs when you try to access a variable that does not exist in that scope.
+4. To create a snippet you go to sources and the snppets are on the left and you right click 
+to create a new snippets.  I'm using them now.
+5. When an error occurs, JavaScript will normally stop and generate an error message.
+throw an error is an exception.
+ run(){
+causeError;
+ } catch(err) {
+  console.log("this is an eror");
+}
+1. person; it's not initialized or declard.
+to fix this you can use a try/catch or you throw a referenceError.
+This is a reference error.  
+2.  var data = {};
+    //data.displayInfo();
+displayInfo is not a function so this a TypeError.
+use the throw keyword.
+3. var data = {};
+data.displayInfo.foo = "bar"; typeerror, foo is undefined.
+4.function data(){
+    var thing = "foo";
+    }
+     data();
+    thing; referenceError,  thing is undefined, it's defined in the 
+local but not global scope*/
+
+/*PART 2
+
+1. i starts at 0, it can't be greater then 5.  It's false.
+   for(var i=0; i < 5; i++)(fixed)
+2. we were intializing instead of comparing 0
+   function addIfEven(num){
+    if(num % 2 === 0){
+        return num + 5;
+    }
+    return num;
+
+3. we used commas insead of semi- colons
+    function loopToFive(){
+    for(var i=0; i < 5; i++){
+        console.log(i);
+
+4.  mistakes: used ; at the end of loop, = used instaed of ===, we're looping over the whole array
+    (< numbers.length),  we have to check the value we're at(numbers[i]) and push the value to the array(push[i]).
+    return has to return after the loop and condition.
+    
+    function displayEvenNumbers(){
+    var numbers = [1,2,3,4,5,6,7,8];
+    var evenNumbers = [];
+    for(var i=0; i<numbers.length-1; i++;){
+        if(numbers[i] % 2 === 0); {
+            evenNumbers.push[i]);
+        }
+    }
+        return evenNumbers;
+    
+}
+displayEvenNumbers(); 
