@@ -1,0 +1,77 @@
+var nestedData = {
+  innerData: {
+    order: ["first", "second", "third"],
+    snacks: ["chips", "fruit", "crackers"],
+    numberData: {
+        primeNumbers: [2,3,5,7,11],
+        fibonnaci: [1,1,2,3,5,8,13]
+    },
+    addSnack: function(snack){
+        this.snacks.push(snack);
+        return this;
+    }
+  }
+}
+ 
+for( var i =0; i < nestedData.innerData.numberData.primeNumbers.length; i++) {
+    console.log(nestedData.innerData.numberData.primeNumbers[i]);
+}
+for (var i =0; i < nestedData.innerData.numberData.fibonnaci.length; i++) {
+     console.log(nestedData.innerData.numberData.fibonnaci[i]);
+}
+console.log(nestedData.innerData.order[1]);
+  
+nestedData.innerData.addSnack("Chocolate");
+
+//This refers to the function.
+
+var nestedObject = {
+  speakers: [{name:"Elie"},{name:"Tim"},{name:"Matt"}],
+  data: {
+    continents: {
+      europe: {
+        countries: {
+          switzerland: {
+            capital: "Bern",
+            population: 8000000
+          }
+        }
+      }
+    },
+    languages: {
+      spanish: {
+          hello: "Hola"
+      },
+      french: {
+          hello: "Bonjour"
+      }
+    }
+  }
+};
+function addSpeaker(speakerName) {
+  nestedObject.speakers.push({ name: "Tate"
+  })
+  return speakerName;
+  }
+  addSpeaker("Tate");
+
+
+function addLanguage(language, greeting) {
+  var newObj = nestedObject.data.languages[language] = { 
+    hello: greeting
+  };
+ return newObj;
+}
+
+addLanguage("Italian", "ciao");
+
+function addCountry(country, capital, pop) {
+
+var countryInfo = nestedObject.data.continents.europe.countries[country] = { capital: capital, 
+      population: pop
+};
+return countryInfo;
+}
+
+addCountry("england", "London", 8674);
+  
