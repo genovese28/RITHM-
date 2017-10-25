@@ -1,0 +1,64 @@
+function each(array, fn) {
+  for(var i = 0; i < array.length; i++){
+    fn(array[i]);
+  }
+}
+each([1,2,3,4], function(val){
+  console.log(val);
+});
+
+each([1,2,3,4], function(val){
+  console.log(val*2);
+});
+
+NEEDS WORK
+
+function map(array, fn){
+  fn(array);
+}
+map([1,2,3,4], function(val){
+  return val *2;
+});
+
+function reject(array, fn){
+  for( var i = 0; i < array.length; i++){
+    if(array.length[i] === true);
+    console.log([i]);
+  }
+  }
+reject([1,2,3,4], function(val){
+    return val > 2;
+});
+
+
+
+TIMER
+ 
+SetInterval will run an infinite amount of time,
+until the timer is cleared.
+
+SetInterval will execute an infinite amount until cleared.
+Loop checks the queu to see if there are any processes to execute.
+
+SetInterva land SetTimeout both accept a callback function.
+
+It's important to set them to a variable so you could reuse them.
+
+Asynchronous is code that is used at a later time, hence 
+setInterval and SetTimeout.
+
+CLOSURE
+
+When a function is able to access variables that
+have already been returned.
+
+For privacy and saftey, knowone can gain access to it.
+
+ A module is piece of code that is encapsulated and can be reused.
+
+Arguments is a "special kind of object".
+
+It looks like an array and be accessed using [] notation.
+
+
+
