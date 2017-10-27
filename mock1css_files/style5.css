@@ -1,0 +1,41 @@
+
+
+
+div {
+  border: 2px  solid black;
+  
+}
+.purple  {
+	background-color: purple;
+	width: 97%;
+	height: 20%;
+	margin-top: 10px;
+
+}
+.red  {
+	background-color: red;
+	width: 30%;
+	height: 70%;
+	margin-bottom: 20px;
+	
+}
+.green  {
+	background-color: green;
+	width: 30%;
+	height:  70%;
+  margin-bottom: 20px;
+}
+.orange   {
+	background-color: orange;
+	width:  30%;
+	height: 70%;
+	margin-bottom: 20px;
+	
+}
+.container  {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 500px;
+	width: 500px;
+}
